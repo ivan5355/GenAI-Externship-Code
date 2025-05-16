@@ -10,7 +10,7 @@ name = "Ivan"
 age = 22
 height = 6.5
 
-print("Hi, my name is",name,". I am", age,"and am",height,"feet tall.")
+print("Hi my name is",name,". I am", age,"and am",height,"feet")
 # Task 2 - Operators: Playing with Numbers
 # We all love some math, don’t we? Okay, maybe not everyone, but trust me, this will be easy and fun!
 
