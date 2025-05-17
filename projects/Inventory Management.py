@@ -46,7 +46,11 @@ def update_item(item_name, quantity = None, price = None):
         inventory[item_name] =(new_quantity, new_price)
     else:
         print("f{item_name} is not in inventory")
-        
+
+def display_inventory():
+    for item_name,info in inventory.items():
+        print(f"Item:{item_name} Quantity:{info[0]}  Price:{info[1]}")
+
 add_item("mango", 15, 3.0)
 print(inventory)
 
@@ -58,3 +62,15 @@ print(inventory)
     
 update_item("mango", price = 20)
 print(inventory)
+
+
+add_item("orange", 15, 3.0)
+print(inventory)
+
+add_item("kii", 15, 10.0)
+print(inventory)
+
+add_item("pineapple", 15, 10.0)
+print(inventory)
+
+display_inventory()
